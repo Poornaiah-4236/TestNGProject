@@ -2,23 +2,22 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Parallel Testing Suite" parallel="methods" thread-count="2" >
 	<groups>
-		<run>
-			
+		<run>			
 			<exclude name="Regression Testing"></exclude>
 		</run>
 	</groups>
-	<parameter name="Value1" value="10" />
-	<parameter name="Value2" value="20" />
-	<parameter name="StrPara" value="Testng" />	
+		<parameter name="Value1" value="10" />
+		<parameter name="Value2" value="20" />
+		<parameter name="StrPara" value="Testng" />	
 	<test name="Parameters">
-	<parameter name="Browser" value="Chrome"/>
-	<parameter name="product" value="Phones"/>
-	<parameter name="search" value="phones under 15k+"/>
-	<parameter name="URL" value="https://www.amazon.in/"/>
-		<classes>			
-			<class name="com.base.Test.baseTest"/>			
-			<class name="com.test.Login.loginPageValidation"/>
-		</classes>
+		<parameter name="Browser" value="Chrome"/>
+		<parameter name="product" value="Phones"/>
+		<parameter name="search" value="phones under 15k+"/>
+		<parameter name="URL" value="https://www.amazon.in/"/>
+			<classes>			
+				<class name="com.base.Test.baseTest"/>						
+				<class name="com.test.Login.loginPageValidation"/>
+			</classes>
 	</test>
 	<test thread-count="5" name="Test">
 	</test> <!-- Test -->

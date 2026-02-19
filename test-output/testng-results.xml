@@ -1,111 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-11T16:09:09 IST" name="Parallel Testing Suite" finished-at="2026-02-11T16:09:15 IST" duration-ms="5921">
+  <suite started-at="2026-02-15T06:28:12 IST" name="Default suite" finished-at="2026-02-15T06:28:12 IST" duration-ms="41">
     <groups>
     </groups>
-    <test started-at="2026-02-11T16:09:09 IST" name="Parameters" finished-at="2026-02-11T16:09:15 IST" duration-ms="5880">
-      <class name="com.test.Login.loginPageValidation">
-        <test-method is-config="true" signature="openBrowser(org.testng.ITestContext)[pri:0, instance:com.test.Login.loginPageValidation@74f6c5d8]" started-at="2026-02-11T16:09:09 IST" name="openBrowser" finished-at="2026-02-11T16:09:12 IST" duration-ms="2935" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3f67593e]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2026-02-15T06:28:12 IST" name="Default test" finished-at="2026-02-15T06:28:12 IST" duration-ms="41">
+      <class name="com.amazon.api.baseAPITest">
+        <test-method signature="getAndValidate()[pri:0, instance:com.amazon.api.baseAPITest@536dbea0]" started-at="2026-02-15T06:28:12 IST" name="getAndValidate" finished-at="2026-02-15T06:28:12 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Login.loginPageValidation@74f6c5d8]" started-at="2026-02-11T16:09:12 IST" name="setup" finished-at="2026-02-11T16:09:12 IST" duration-ms="28" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateProd(java.lang.String,java.lang.String)[pri:0, instance:com.test.Login.loginPageValidation@74f6c5d8]" started-at="2026-02-11T16:09:12 IST" name="validateProd" finished-at="2026-02-11T16:09:15 IST" duration-ms="2422" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Phones]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[phones under 15k+]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=144.0.7559.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f00639ec79634233fe5bde7f2bb7d3b6, getElementText {id=f.DC61CEB3ED86413E4409538C86741F81.d.707D2E56DF680B21FC9E1AF4419ACB8A.e.57}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.112, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\poorn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57124}, goog:processID: 174660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57124/devtoo..., se:cdpVersion: 144.0.7559.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f00639ec79634233fe5bde7f2bb7d3b6)] -> xpath: //div[contains(@class,'s-suggestion s-suggestion-ellipsis-direction')]]
-Session ID: f00639ec79634233fe5bde7f2bb7d3b6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=144.0.7559.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f00639ec79634233fe5bde7f2bb7d3b6, getElementText {id=f.DC61CEB3ED86413E4409538C86741F81.d.707D2E56DF680B21FC9E1AF4419ACB8A.e.57}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.112, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\poorn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57124}, goog:processID: 174660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57124/devtoo..., se:cdpVersion: 144.0.7559.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f00639ec79634233fe5bde7f2bb7d3b6)] -> xpath: //div[contains(@class,'s-suggestion s-suggestion-ellipsis-direction')]]
-Session ID: f00639ec79634233fe5bde7f2bb7d3b6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
-at com.amazon.Pages.homePage.validateProduct(homePage.java:40)
-at com.test.Login.loginPageValidation.validateProd(loginPageValidation.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Login.loginPageValidation@74f6c5d8]" started-at="2026-02-11T16:09:15 IST" name="tearDown" finished-at="2026-02-11T16:09:15 IST" duration-ms="446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.Login.loginPageValidation -->
-    </test> <!-- Parameters -->
-    <test started-at="2026-02-11T16:09:15 IST" name="Test" finished-at="2026-02-11T16:09:15 IST" duration-ms="6">
-    </test> <!-- Test -->
-  </suite> <!-- Parallel Testing Suite -->
+        </test-method> <!-- getAndValidate -->
+      </class> <!-- com.amazon.api.baseAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

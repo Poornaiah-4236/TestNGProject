@@ -1,0 +1,19 @@
+{
+  "account": {
+    "id": "ACC123",
+    "type": "SAVINGS",
+    "balance": 5000,
+    "transactions": [
+      {
+        "txnId": "T1",
+        "amount": 1000,
+        "status": "SUCCESS"
+      },
+      {
+        "txnId": "T2",
+        "amount": 2000,
+        "status": "FAILED"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "common_data": {
+      "type": "object",
+      "properties": {
+        "remote_os": { "enum": ["Linux", "Windows"] }
+      },
+      "required": ["remote_os"]
+    },
+    "file": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "common_data": {
+            "properties": { "remote_os": { "const": "Windows" } }
+          }
+        }
+      },
+      "then": {
+        "properties": { "file": { "pattern": "^.*\\.exe$" } },
+        "required": ["file"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "common_data": {
+            "properties": { "remote_os": { "const": "Linux" } }
+          }
+        }
+      },
+      "then": {
+        "properties": { "file": { "pattern": "^.*\\.bin$" } },
+        "required": ["file"]
+      }
+    }
+  ]
+}

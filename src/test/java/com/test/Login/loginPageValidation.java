@@ -10,6 +10,7 @@ public class loginPageValidation extends baseTest {
 	homePage homePage;
     @BeforeMethod
     public void setup() {
+    	
         loginPage = new loginPage(driver);
         homePage=new homePage(driver);
     }
